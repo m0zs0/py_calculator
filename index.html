@@ -8,10 +8,10 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@pyscript/core"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <form>
-        <div class="sor">
-            <input type="text" id="szam1">
+<body >
+    <form class="calculator">
+        <div class="display">
+            <input type="text" id="buttons">
                 <select name="" id="muvelet">
                     <option value="osszeadas">+</option>
                     <option value="kivonás">-</option>
@@ -20,12 +20,12 @@
                 </select>
                 <input type="text" id="szam2">
         </div>
-        <div class="gombok">
-            <button id="torles" py-click="torol">C</button>
-            <button id="egyenlo" py-click="szamit">=</button>
+        <div class="buttons">
+            <button class="buttons button" py-click="torol">C</button>
+            <button class="buttons button" py-click="szamit">=</button>
         </div>
-        <div class="eredmenysor">
-            <p id="eredmeny">0</p>
+        <div class="result">
+            <p id="result-number">0</p>
         </div>
     </form>
 
