@@ -12,4 +12,26 @@
 
     <py-script src="main.py"></py-script>
 </body>
+<body>
+    <form>
+        <div class="sor">
+            <input type="text" id="szam1">
+            <select name="" id="muvelet">
+                <option value="osszeadas">+</option>
+                <option value="kivonas">-</option>
+                <option value="szorzas">*</option>
+                <option value="osztas">/</option>
+            </select>
+            <input type="text" id="szam2">
+        </div>
+
+<div class="gombok">
+    <button id="torles" py-click="torol">C</button>
+    <button id="egyenlo" py-click="szamit">=</button>
+</div>
+
+<div class="eredmenysor"></div>
+<p id="eredmeny">0</p>
+    </form>
+</body>
 </html>
